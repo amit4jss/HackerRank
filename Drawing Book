@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+int main()
+{ int n,p;
+ cin>>n; 
+ cin>>p;
+int d1=0,d2=0;
+if(n%2==0)
+{
+    if(p==1 || p==n)
+    {
+        cout<<"0";
+    }
+    else
+    {
+        d1=p/2;
+        d2=(n-p+1)/2;
+        if(d1<=d2)
+        {
+            cout<<d1;
+        }
+        else
+        {
+            cout<<d2;
+        }
+    }
+}
+else if(n%2==1)
+{
+    if(p==1 || p==n || p==(n-1))
+    {
+        cout<<"0";
+    }
+    else
+    {
+        d1=p/2;
+        d2=(n-p)/2;
+        if(d1<=d2)
+        {
+            cout<<d1;
+        }
+        else
+        {
+            cout<<d2;
+        }
+    }
+}
+return 0;
+
+}
