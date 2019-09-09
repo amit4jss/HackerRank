@@ -1,0 +1,12 @@
+int getMoneySpent(vector<int> keyboards, vector<int> drives, int b) 
+{ int M=-1;
+  for(int i=0;i<keyboards.size();i++)
+  {
+      for(int j=0;j<drives.size();j++)
+      {
+          M=(drives[j]+keyboards[i])>M && (drives[j]+keyboards[i])<=b ? drives[j]+keyboards[i]:M;
+      }
+  }
+return M;
+
+}
