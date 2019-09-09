@@ -1,0 +1,19 @@
+int hurdleRace(int k, vector<int> height) 
+{ int max=height[0];
+for(int i=1;i<height.size();i++)
+{
+    if(max<height[i])
+    {
+        max=height[i];
+    }
+}
+if(k>=max)
+{
+    return 0;
+}
+else
+{
+int d=abs(max-k);
+return d;
+}
+}
