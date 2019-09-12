@@ -1,0 +1,15 @@
+int viralAdvertising(int n) 
+{  int i=5;
+   int like;
+   int tlike;
+   while(n!=0)
+{
+    like=i/2;
+    tlike=tlike+like;
+    i=like*3;
+    n--;
+}
+return tlike;
+
+
+}
