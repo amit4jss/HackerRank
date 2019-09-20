@@ -1,0 +1,20 @@
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    map<int,int>m;
+    for(int i=1;i<=n;i++)
+    {
+        int temp;
+        cin>>temp;
+        m.insert(pair<int,int>(temp,i));
+    }
+    for(int i=1;i<=n;i++)
+    {
+        cout<<m[m[i]]<<endl;
+    }
+    return 0;
+}
