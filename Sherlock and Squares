@@ -1,0 +1,14 @@
+    static int squares(int a, int b) 
+    { int count=0;
+        int lower = (int) Math.ceil(Math.sqrt(a));
+        int upper = (int) Math.ceil(Math.sqrt(b));
+        for(int i=lower;i<=upper;i++)
+        {
+            if(a<=i*i && b>=i*i)
+            {
+                count++;
+            }
+        }
+
+     return count;
+    }
