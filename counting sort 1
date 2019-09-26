@@ -1,0 +1,9 @@
+static int[] countingSort(int[] arr) {
+      int index[]=new int[100];
+    for(int num:arr){
+        index[num]++;
+    }
+    return index;
+
+
+}
